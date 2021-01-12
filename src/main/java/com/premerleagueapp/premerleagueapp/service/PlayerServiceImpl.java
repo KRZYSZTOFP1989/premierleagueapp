@@ -2,14 +2,16 @@ package com.premerleagueapp.premerleagueapp.service;
 
 import com.premerleagueapp.premerleagueapp.domain.Player;
 import com.premerleagueapp.premerleagueapp.repository.PlayerRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class PlayerServiceImpl {
+@Service
+@RequiredArgsConstructor
+public class PlayerServiceImpl implements PlayerService{
 
-    @Autowired
-    PlayerRepository playerRepository;
+    private final PlayerRepository playerRepository;
 
     public List<Player> getAllPlayer() {
         return playerRepository.findAll();
