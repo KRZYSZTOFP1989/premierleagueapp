@@ -1,4 +1,5 @@
 package com.premerleagueapp.premerleagueapp.rapidapi;
+
 import java.util.HashMap;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -10,17 +11,17 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "rank",
-        "team_id",
-        "teamName",
-        "matchsPlayed",
-        "win",
-        "draw",
-        "lose",
-        "goalsFor",
-        "goalsAgainst",
-        "goalsDiff",
-        "points"
+    "rank",
+    "team_id",
+    "teamName",
+    "matchsPlayed",
+    "win",
+    "draw",
+    "lose",
+    "goalsFor",
+    "goalsAgainst",
+    "goalsDiff",
+    "points"
 })
 public class PremierLeagueTable {
 
@@ -168,4 +169,5 @@ public class PremierLeagueTable {
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
+
 }

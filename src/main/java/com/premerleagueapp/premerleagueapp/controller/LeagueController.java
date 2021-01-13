@@ -4,6 +4,7 @@ import com.premerleagueapp.premerleagueapp.dto.LeagueDto;
 import com.premerleagueapp.premerleagueapp.mapper.LeagueMapper;
 import com.premerleagueapp.premerleagueapp.service.LeagueService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
