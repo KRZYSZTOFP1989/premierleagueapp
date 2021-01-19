@@ -1,0 +1,16 @@
+package com.premerleagueapp.premerleagueapp.backend.footballdataapi.config;
+
+import lombok.Getter;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Getter
+@Component
+public class FootballApiConfig {
+
+    @Value("${footballdata.premierleaguetab.url}")
+    private String FootballApiEndpoint;
+
+    @Value("${footballdata.token.value}")
+    private String FootballApiToken;
+}
