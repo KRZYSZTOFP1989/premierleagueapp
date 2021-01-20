@@ -1,9 +1,11 @@
-package com.premerleagueapp.premerleagueapp.backend.footballdataapi.config;
+package com.premerleagueapp.premerleagueapp.backend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
+@EnableScheduling
 @Configuration
 public class CoreConfiguration {
 
@@ -11,4 +13,6 @@ public class CoreConfiguration {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
+
 }

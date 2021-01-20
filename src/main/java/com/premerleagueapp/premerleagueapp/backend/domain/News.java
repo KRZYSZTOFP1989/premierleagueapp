@@ -1,7 +1,6 @@
 package com.premerleagueapp.premerleagueapp.backend.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.premerleagueapp.premerleagueapp.backend.domain.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

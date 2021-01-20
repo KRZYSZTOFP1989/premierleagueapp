@@ -7,7 +7,6 @@ import com.premerleagueapp.premerleagueapp.backend.service.PlayerService;
 import com.premerleagueapp.premerleagueapp.backend.service.PositionService;
 import com.premerleagueapp.premerleagueapp.backend.service.TeamService;
 import com.premerleagueapp.premerleagueapp.gui.MainLayout;
-import com.premerleagueapp.premerleagueapp.gui.view.player.PlayerForm;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;

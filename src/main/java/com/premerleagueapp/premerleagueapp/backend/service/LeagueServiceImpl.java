@@ -3,6 +3,7 @@ package com.premerleagueapp.premerleagueapp.backend.service;
 import com.premerleagueapp.premerleagueapp.backend.domain.League;
 import com.premerleagueapp.premerleagueapp.backend.repository.LeagueRepository;
 import lombok.RequiredArgsConstructor;
+import org.atmosphere.config.service.Singleton;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

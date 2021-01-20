@@ -1,5 +1,6 @@
 package com.premerleagueapp.premerleagueapp.backend.service;
 
+import com.premerleagueapp.premerleagueapp.backend.domain.Mail;
 import com.premerleagueapp.premerleagueapp.backend.domain.User;
 import com.premerleagueapp.premerleagueapp.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,6 +15,8 @@ import java.util.Random;
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+
+    private final SimpleEmailService simpleEmailService;
 
     @Override
     public List<User> getAllUsers() {
@@ -30,7 +33,12 @@ public class UserServiceImpl implements UserService {
     public User createUser(final User user) {
         LocalDateTime now = LocalDateTime.now();
         user.setSignUpDate(now);
-        return userRepository.save(user);
+        userRepository.save(user);
+        simpleEmailService.send(new Mail(
+                "",
+                "User account has been created",
+                "New user" + user.getNickname() + "Your account has been created"));
+        return user;
     }
 
     @Override
@@ -55,5 +63,4 @@ public class UserServiceImpl implements UserService {
         userRepository.save(user);
         return alphabet;
     }
-
 }

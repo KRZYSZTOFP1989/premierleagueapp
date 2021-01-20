@@ -8,7 +8,7 @@ public interface UserService {
 
     List<User> getAllUsers();
     User findById(final Long userid) throws Exception;
-    User createUser(final User user) throws Exception;
+    User createUser(final User user);
     void deleteUser(final Long userId);
     String generateKey(final Long userId) throws Exception;
 }

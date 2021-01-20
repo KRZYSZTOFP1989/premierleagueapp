@@ -3,7 +3,6 @@ package com.premerleagueapp.premerleagueapp.gui.view.league;
 import com.premerleagueapp.premerleagueapp.backend.domain.League;
 import com.premerleagueapp.premerleagueapp.backend.service.LeagueService;
 import com.premerleagueapp.premerleagueapp.gui.MainLayout;
-import com.premerleagueapp.premerleagueapp.gui.view.league.LeagueForm;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
